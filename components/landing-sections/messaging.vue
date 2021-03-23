@@ -1,5 +1,5 @@
 <template>
-  <div class="relative ear1-messages">
+  <div class="relative ear1-messages" ref="message-box">
     <div
       class="absolute z-10 top-0 left-0 w-full min-h-full bg-transparent grid md:grid-cols-2"
     >
@@ -138,21 +138,18 @@ export default {
   mounted() {
     const tl = gsap.timeline();
     tl.from(this.$refs["message-1"], {
-      // y: this.$refs["message-1"].clientHeight,
       height: 0,
       display: "hidden",
       delay: 0.2,
       opacity: 0,
     })
       .from(this.$refs["message-2"], {
-        // y: this.$refs["message-1"].clientHeight,
         height: 0,
         display: "hidden",
         delay: 0.3,
         opacity: 0,
       })
       .from(this.$refs["message-3"], {
-        // y: this.$refs["message-1"].clientHeight,
         height: 0,
         display: "hidden",
         delay: 0.3,
@@ -160,16 +157,12 @@ export default {
       });
     ScrollTrigger.create({
       animation: tl,
-      trigger: this.$refs["message-1"],
-      start: "top 70%",
+      trigger: this.$refs["message-box"],
+      start: "top 80%",
       // markers: true,
     });
   },
 };
 </script>
 
-<style scoped>
-.message-box {
-  transform: translateY(100px);
-}
-</style>
+<style scoped></style>

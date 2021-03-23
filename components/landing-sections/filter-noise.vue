@@ -1,5 +1,5 @@
 <template>
-  <div class="relative min-h-screen">
+  <div class="relative min-h-screen" ref="contact-cont">
     <div
       class="absolute z-10 top-0 left-0 w-full min-h-full bg-transparent grid md:grid-cols-2"
     >
@@ -21,7 +21,6 @@
       >
         <div
           class="w-9/12 sm:w-8/12 md:w-9/12 bm:w-11/12 h-5/6 relative border-b-12 border-l-12 border-r-12 border-gray-400 rounded-bl-3xl rounded-br-3xl"
-          ref="contact-cont"
         >
           <div
             class="absolute bottom-0 left-0 min-w-full h-4/6"
@@ -118,15 +117,17 @@ export default {
     tl.to(this.$refs["contact-box"], {
       scale: 0.98,
       y: -100,
+      opacity: 0,
       ease: Bounce.easeInOut,
     }).to(this.$refs["contact-box"], {
       scale: 1,
       y: 0,
+      opacity: 1,
     });
     ScrollTrigger.create({
       animation: tl,
       trigger: this.$refs["contact-cont"],
-      start: "top 35%",
+      start: "top 25%",
       // markers: true,
     });
   },
