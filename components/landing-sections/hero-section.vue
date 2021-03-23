@@ -27,17 +27,22 @@
         </p>
         <div class="mt-14">
           <div class="grid gap-4 md:grid-cols-2 items-center justify-center">
-            <button class="w-max h-m">
+            <button
+              class="w-max h-m focus:outline-none transform focus:scale-105 duration-75"
+            >
               <playstore />
             </button>
-            <button>
+            <button
+              class="w-max h-m focus:outline-none transform focus:scale-105 duration-75"
+            >
               <applestore />
             </button>
           </div>
         </div>
-        <div class="relative z-20 mt-14">
+        <div class="relative z-20 mt-14" ref="mobile-holder">
           <div
             class="absolute z-10 bottom-0 -left-2/4 hidden md:block w-96 h-56"
+            ref="mobile-1"
           >
             <img src="/mobile-2.png" class="h-full" alt="" />
           </div>
@@ -49,6 +54,7 @@
           </div>
           <div
             class="absolute z-10 bottom-0 -right-2/4 hidden md:block w-96 h-56"
+            ref="mobile-3"
           >
             <img src="/mobile-3.png" class="h-full" alt="" />
           </div>
@@ -64,12 +70,48 @@
 </template>
 
 <script>
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Playstore from "~/components/icons/playstore";
 import Applestore from "~/components/icons/applestore";
 export default {
   components: {
     Playstore,
     Applestore,
+  },
+  created() {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.defaults({ duration: 0.4 });
+  },
+  mounted() {
+    const tl = gsap.timeline();
+    const tl3 = gsap.timeline();
+    tl.from(this.$refs["mobile-1"], {
+      rotate: "20deg",
+      opacity: 0.7,
+      x: 190,
+    });
+    tl3.from(this.$refs["mobile-3"], {
+      rotate: "-20deg",
+      opacity: 0.7,
+      x: -190,
+    });
+    ScrollTrigger.create({
+      animation: tl3,
+      trigger: this.$refs["mobile-holder"],
+      start: "top 90%",
+      end: "top 10%",
+      scrub: true,
+      // markers: true,
+    });
+    ScrollTrigger.create({
+      animation: tl,
+      trigger: this.$refs["mobile-holder"],
+      start: "top 90%",
+      end: "top 10%",
+      scrub: true,
+      // markers: true,
+    });
   },
 };
 </script>

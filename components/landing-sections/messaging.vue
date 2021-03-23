@@ -19,9 +19,7 @@
       >
         <div class="flex flex-col">
           <div class="flex justify-between items-center">
-            <span
-              class="bg-yellow-400 text-xs bm:text-sm w-max rounded-2xl px-7 py-1"
-            >
+            <span class="bg-yellow-400 text-sm w-max rounded-2xl px-7 py-1">
               Fans
             </span>
             <div
@@ -56,9 +54,9 @@
           </div>
 
           <div>
-            <div :style="`transform: translateY(${boxHeight}px)`">
+            <div>
               <div
-                class="bg-white p-3 rounded-xl rounded-br-none max-w-xs ml-auto"
+                class="bg-white p-3 rounded-xl rounded-br-none max-w-xs ml-auto overflow-hidden"
                 ref="message-1"
               >
                 <p class="text-left">
@@ -68,14 +66,14 @@
                 <span class="text-xs block text-right mt-1"> 9:05pm </span>
               </div>
               <div
-                class="bg-white p-3 rounded-xl rounded-bl-none max-w-xs mr-auto mt-6"
+                class="bg-white p-3 rounded-xl rounded-bl-none max-w-xs mr-auto mt-6 overflow-hidden"
                 ref="message-2"
               >
                 <p>Hey, Nice to meet you</p>
                 <span class="text-xs block mt-1"> 9:05pm </span>
               </div>
               <div
-                class="bg-white p-3 rounded-xl rounded-bl-none max-w-xs mr-auto mt-6"
+                class="bg-white p-3 rounded-xl rounded-bl-none max-w-xs mr-auto mt-6 overflow-hidden"
                 ref="message-3"
               >
                 <p>I’m not looking to hire a producer now</p>
@@ -131,30 +129,41 @@ export default {
     ChatIcon,
   },
   data() {
-    return {
-      boxHeight: 0,
-    };
+    return {};
   },
   created() {
     gsap.registerPlugin(ScrollTrigger);
+    gsap.defaults({ duration: 0.4 });
   },
   mounted() {
-    this.boxHeight =
-      this.$refs["message-1"].clientHeight +
-      this.$refs["message-2"].clientHeight +
-      this.$refs["message-3"].clientHeight;
-    console.log(this.$refs["message-1"].clientHeight, "za heaight");
     const tl = gsap.timeline();
     tl.from(this.$refs["message-1"], {
-      y: this.$refs["message-1"].clientHeight + 200,
-      delay: 0.5,
+      // y: this.$refs["message-1"].clientHeight,
+      height: 0,
+      display: "hidden",
+      delay: 0.2,
+      opacity: 0,
+    })
+      .from(this.$refs["message-2"], {
+        // y: this.$refs["message-1"].clientHeight,
+        height: 0,
+        display: "hidden",
+        delay: 0.3,
+        opacity: 0,
+      })
+      .from(this.$refs["message-3"], {
+        // y: this.$refs["message-1"].clientHeight,
+        height: 0,
+        display: "hidden",
+        delay: 0.3,
+        opacity: 0,
+      });
+    ScrollTrigger.create({
+      animation: tl,
+      trigger: this.$refs["message-1"],
+      start: "top 70%",
+      // markers: true,
     });
-    // ScrollTrigger.create({
-    //   animation: tl,
-    //   trigger: this.$refs["ear1-messages"],
-    //   start: "end top",
-    //   markers: true,
-    // });
   },
 };
 </script>

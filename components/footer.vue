@@ -13,10 +13,10 @@
           <div class="flex items-center">
             <input
               type="text"
-              class="border-2 border-gray-300 border-r-0 rounded-tl-md rounded-bl-md p-2 flex-grow"
+              class="border-2 border-gray-300 border-r-0 rounded-tl-md rounded-bl-md p-2 flex-grow focus:outline-none transform focus:border-gray-900 duration-75"
             />
             <button
-              class="bg-black text-white py-2 px-6 sm:px-10 border-2 border-black rounded-tr-md rounded-br-md tracking-widest"
+              class="bg-black text-white py-2 px-6 sm:px-10 border-2 border-black rounded-tr-md rounded-br-md tracking-widest focus:opacity-90"
             >
               SUBMIT
             </button>
@@ -30,17 +30,20 @@
           <img src="/footer-logo.png" />
           <div class="flex items-center mt-7">
             <div
-              class="bg-gray-100 p-3 rounded-full flex items-center justify-center mr-5"
+              tabindex="-1"
+              class="transform focus:scale-110 duration-75 bg-gray-100 p-3 rounded-full flex items-center justify-center mr-5"
             >
               <facebook />
             </div>
             <div
-              class="bg-gray-100 p-3 rounded-full flex items-center justify-center mr-5"
+              tabindex="-1"
+              class="transform focus:scale-110 duration-75 bg-gray-100 p-3 rounded-full flex items-center justify-center mr-5"
             >
               <twitter />
             </div>
             <div
-              class="bg-gray-100 p-3 rounded-full flex items-center justify-center"
+              tabindex="-1"
+              class="transform focus:scale-110 duration-75 bg-gray-100 p-3 rounded-full flex items-center justify-center"
             >
               <instagram />
             </div>
@@ -51,37 +54,126 @@
             <div>
               <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
               <ul>
-                <li class="mb-4">Home</li>
-                <li class="mb-4">For fans</li>
-                <li class="mb-4">For influencers</li>
-                <li class="">FAQ's</li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >Home</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For fans</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For influencers</nuxt-link
+                  >
+                </li>
+                <li class="">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >FAQ's</nuxt-link
+                  >
+                </li>
               </ul>
             </div>
             <div>
               <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
               <ul>
-                <li class="mb-4">Home</li>
-                <li class="mb-4">For fans</li>
-                <li class="mb-4">For influencers</li>
-                <li class="">FAQ's</li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >Home</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For fans</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For influencers</nuxt-link
+                  >
+                </li>
+                <li class="">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >FAQ's</nuxt-link
+                  >
+                </li>
               </ul>
             </div>
             <div>
               <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
               <ul>
-                <li class="mb-4">Home</li>
-                <li class="mb-4">For fans</li>
-                <li class="mb-4">For influencers</li>
-                <li class="">FAQ's</li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >Home</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For fans</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For influencers</nuxt-link
+                  >
+                </li>
+                <li class="">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >FAQ's</nuxt-link
+                  >
+                </li>
               </ul>
             </div>
             <div>
               <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
               <ul>
-                <li class="mb-4">Home</li>
-                <li class="mb-4">For fans</li>
-                <li class="mb-4">For influencers</li>
-                <li class="">FAQ's</li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >Home</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For fans</nuxt-link
+                  >
+                </li>
+                <li class="mb-4">
+                  <nuxt-link
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    to="#"
+                    >For influencers</nuxt-link
+                  >
+                </li>
               </ul>
             </div>
           </div>

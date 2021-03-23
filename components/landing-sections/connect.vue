@@ -6,9 +6,7 @@
       <div
         class="flex flex-col w-full md:max-w-lg order-1 mt-0 sm:mt-12 md:mt-0"
       >
-        <span
-          class="bg-yellow-400 text-xs bm:text-sm w-max rounded-2xl px-7 py-1"
-        >
+        <span class="bg-yellow-400 text-sm w-max rounded-2xl px-7 py-1">
           Fans
         </span>
         <h2
@@ -51,17 +49,17 @@ export default {
         { img: "/people/person-2.jpeg", index: 1 },
         { img: "/people/person-3.jpeg", index: 2 },
         { img: "/people/person-4.jpeg", index: 3 },
-        { img: "/people/person-5.jpg", index: 4 },
+        { img: "/people/person-5.jpeg", index: 4 },
       ],
     };
   },
   mounted() {
-    // setInterval(async () => {
-    //   await this.fakeAsync();
-    //   const removedPerson = this.persons.splice(0, 1);
-    //   this.persons = [...this.persons, ...removedPerson];
-    //   await this.revert();
-    // }, 2600);
+    setInterval(async () => {
+      await this.fakeAsync();
+      const removedPerson = this.persons.splice(0, 1);
+      this.persons = [...this.persons, ...removedPerson];
+      await this.revert();
+    }, 2200);
   },
   methods: {
     fakeAsync() {

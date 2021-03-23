@@ -7,7 +7,7 @@
         <div class="h-full flex items-end justify-center">
           <img
             src="/mobile-4.png"
-            class="w-9/12 sm:w-8/12 md:w-9/12 bm:w-11/12 h-full"
+            class="w-9/12 sm:w-8/12 md:w-9/12 bm:w-10/12 h-full"
             alt=""
           />
         </div>
@@ -17,9 +17,7 @@
           class="flex flex-col h-full max-w-full bm:max-w-md lg:max-w-lg justify-center md:justify-start"
         >
           <div class="flex justify-between items-center">
-            <span
-              class="bg-yellow-500 text-xs bm:text-sm w-max rounded-2xl px-7 py-1"
-            >
+            <span class="bg-yellow-500 text-sm w-max rounded-2xl px-7 py-1">
               Influencer
             </span>
           </div>

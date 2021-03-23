@@ -24,7 +24,7 @@
         <div
           class="pt-0 pb-20 sm:pb-24 sm:pt-0 bm:pb-32 px-6 xs:px-9 sm:px-12 bm:px-24"
         >
-          <img src="/mobile-8.png" class="mx-auto" alt="" />
+          <img src="/mobile-8.png" class="mx-auto w-96" alt="" />
         </div>
       </div>
 
@@ -51,10 +51,14 @@
                 <div
                   class="inline-grid gap-4 sm:grid-cols-2 justify-center bm:justify-start flex-wrap items-start"
                 >
-                  <button class="">
+                  <button
+                    class="focus:outline-none transform focus:scale-105 duration-75"
+                  >
                     <playstore />
                   </button>
-                  <button class="">
+                  <button
+                    class="focus:outline-none transform focus:scale-105 duration-75"
+                  >
                     <applestore />
                   </button>
                 </div>

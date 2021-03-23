@@ -21,8 +21,12 @@
       >
         <div
           class="w-9/12 sm:w-8/12 md:w-9/12 bm:w-11/12 h-5/6 relative border-b-12 border-l-12 border-r-12 border-gray-400 rounded-bl-3xl rounded-br-3xl"
+          ref="contact-cont"
         >
-          <div class="absolute bottom-0 left-0 min-w-full h-4/6">
+          <div
+            class="absolute bottom-0 left-0 min-w-full h-4/6"
+            ref="contact-box"
+          >
             <div
               class="absolute bg-gray-600 z-20 bottom-0 left-0 min-w-full h-5"
             ></div>
@@ -59,9 +63,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="relative bm:block flex bm:items-start items-center bg-gray-800 bm:bg-gray-900"
-      >
+      <div class="relative bm:block flex bm:items-start items-center">
         <div
           class="bg-transparent py-20 sm:py-24 bm:py-32 px-6 xs:px-9 sm:px-12 bm:px-24 relative z-20"
         >
@@ -100,10 +102,33 @@
 </template>
 
 <script>
+import gsap, { Bounce } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FilterIcon from "~/components/icons/filter";
 export default {
   components: {
     FilterIcon,
+  },
+  created() {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.defaults({ duration: 0.3 });
+  },
+  mounted() {
+    const tl = gsap.timeline();
+    tl.to(this.$refs["contact-box"], {
+      scale: 0.98,
+      y: -100,
+      ease: Bounce.easeInOut,
+    }).to(this.$refs["contact-box"], {
+      scale: 1,
+      y: 0,
+    });
+    ScrollTrigger.create({
+      animation: tl,
+      trigger: this.$refs["contact-cont"],
+      start: "top 35%",
+      // markers: true,
+    });
   },
 };
 </script>

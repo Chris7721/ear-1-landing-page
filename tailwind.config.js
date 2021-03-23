@@ -31,6 +31,7 @@ module.exports = {
         "green-500": "#007640",
         "gray-200": "rgba(0,0,0, .7)",
         "gray-300": "#a6a6a6",
+        "yellow-300": "#FFBB62",
       },
       fontFamily: {
         dmsans: ["DM Sans, sans"],
