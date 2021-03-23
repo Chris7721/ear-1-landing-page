@@ -1,6 +1,6 @@
 <template>
   <div
-    class="bg-white overflow-hidden py-12 sm:py-24 px-6 xs:px-9 sm:px-12 bm:px-24 max-w-screen-xl w-full"
+    class="bg-white overflow-hidden py-12 sm:py-24 px-6 xs:px-9 sm:px-12 bm:px-24 w-full"
   >
     <div class="max-w-screen-xl mx-auto">
       <div class="grid gap-8 bm:grid-cols-12 flex-shrink-0">
