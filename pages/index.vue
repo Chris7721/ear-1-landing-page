@@ -97,7 +97,7 @@ export default {
       trigger: this.$refs["container1"],
       start: "top top",
       // end: "+-4000",
-      scrub: true,
+      scrub: 0.6,
       pin: true,
       // anticipatePin: 0,
       // pinSpacing: false,

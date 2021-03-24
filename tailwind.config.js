@@ -8,7 +8,9 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   darkMode: false, // or 'media' or 'class'
+  // change existing style
   theme: {
+    // add additional values to tailwindcss
     extend: {
       borderRadius: {
         "p-lg": "3rem",
