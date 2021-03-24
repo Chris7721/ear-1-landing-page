@@ -2,28 +2,26 @@
   <div class="">
     <HeroSection />
     <WhatCan />
-    <div
-      class="relative min-h-screen overflow-hidden"
-      id="containerone"
-      ref="container1"
-    >
-      <!-- <div class="absolute z-40"> -->
-      <Connect />
-      <!-- </div> -->
+    <div class="relative min-h-screen overflow-hidden" ref="container1">
       <div
         class="absolute w-full z-10 top-0 left-0 min-h-screen overflow-hidden"
+      >
+        <Connect />
+      </div>
+      <div
+        class="absolute w-full z-20 top-0 left-0 min-h-screen overflow-hidden"
         ref="messaging"
       >
         <Messaging />
       </div>
       <div
-        class="absolute w-full z-20 top-0 left-0 min-h-screen overflow-hidden"
+        class="absolute w-full z-30 top-0 left-0 min-h-screen overflow-hidden"
         ref="earnMore"
       >
         <EarnMore />
       </div>
       <div
-        class="absolute w-full z-30 top-0 left-0 min-h-screen overflow-hidden"
+        class="absolute w-full z-40 top-0 left-0 min-h-screen overflow-hidden"
         ref="filterNoise"
       >
         <FilterNoise />
@@ -101,7 +99,8 @@ export default {
       // end: "+-4000",
       scrub: true,
       pin: true,
-      anticipatePin: 1,
+      // anticipatePin: 0,
+      // pinSpacing: false,
     });
   },
   methods: {},

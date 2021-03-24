@@ -116,9 +116,10 @@ export default {
     const tl = gsap.timeline();
     tl.to(this.$refs["contact-box"], {
       scale: 0.98,
-      y: -100,
+      y: -140,
       opacity: 0,
       ease: Bounce.easeInOut,
+      delay: 0.2,
     }).to(this.$refs["contact-box"], {
       scale: 1,
       y: 0,

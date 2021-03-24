@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white overflow-hidden min-h-screen flex items-center relative">
     <div
-      class="grid gap-8 md:grid-cols-2 py-20 sm:py-24 bm:py-32 px-6 xs:px-9 sm:px-12 bm:px-24 max-w-screen-xl w-full min-h-full mx-auto flex-shrink-0"
+      class="grid gap-2 md:gap-8 md:grid-cols-2 py-20 sm:py-24 bm:py-32 px-6 xs:px-9 sm:px-12 bm:px-24 max-w-screen-xl w-full min-h-full mx-auto flex-shrink-0"
     >
       <div
         class="flex flex-col w-full md:max-w-lg order-1 mt-0 sm:mt-12 md:mt-0"
