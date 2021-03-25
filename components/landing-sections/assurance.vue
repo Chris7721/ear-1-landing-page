@@ -4,7 +4,7 @@
       class="max-w-screen-xl mx-auto min-h-screen py-20 sm:py-24 bm:py-32 border-b-2 border-gray-300"
     >
       <h2
-        class="text-4xl sm:text-5xl bm:text-6xl max-w-full bm:max-w-screen-xs font-medium text-green-500 mb-6 bm:mb-24 pl-6 xs:pl-9 sm:pl-12 bm:pr-0 bm:pl-24"
+        class="text-4xl sm:text-5xl bm:text-6xl max-w-full bm:max-w-screen-xs font-medium text-green-500 mb-16 bm:mb-24 pl-6 xs:pl-9 sm:pl-12 bm:pr-0 bm:pl-24"
       >
         The ear1 assurance
       </h2>
@@ -44,7 +44,7 @@
               >
                 Get ahead of your game
               </h2>
-              <p class="text-white my-7 xs:text-center bm:text-left">
+              <p class="text-white my-7 xs:text-center bm:text-left text-base">
                 Save time and effort. Ear1 is your best choice.
               </p>
               <div class="flex justify-center bm:justify-start">
