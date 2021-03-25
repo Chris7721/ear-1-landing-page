@@ -8,7 +8,7 @@
           class="cursor-pointer flex items-center"
           @click="$emit('close-modal')"
         >
-          <span class="mr-3 text-xl text-gray-200">Close </span>
+          <span class="mr-3 text-xl text-gray-200 font-medium">Close </span>
           <cancel-icon />
         </div>
       </div>
@@ -17,31 +17,31 @@
     <div class="px-3 flex-grow flex justify-center items-center">
       <div>
         <div
-          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200"
+          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200 font-medium"
           @click="$emit('close-modal')"
         >
           Home
         </div>
         <div
-          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200"
+          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200 font-medium"
           @click="$emit('close-modal')"
         >
           For fans
         </div>
         <div
-          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200"
+          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200 font-medium"
           @click="$emit('close-modal')"
         >
           For influencers
         </div>
         <div
-          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200"
+          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200 font-medium"
           @click="$emit('close-modal')"
         >
           Features
         </div>
         <div
-          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200"
+          class="py-5 text-center hover:bg-gray-100 text-xl text-gray-200 font-medium"
           @click="$emit('close-modal')"
         >
           FAQ's
