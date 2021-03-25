@@ -14,8 +14,8 @@
       ></div>
     </div>
     <div class="ml-7 -mt-1">
-      <h3 class="text-3xl">{{ datum.title }}</h3>
-      <p class="text-gray-200 mt-3">
+      <h3 class="text-3xl text-gray-200">{{ datum.title }}</h3>
+      <p class="text-gray-400 mt-3 text-base sm:text-lg">
         {{ datum.detail }}
       </p>
     </div>

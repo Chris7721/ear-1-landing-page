@@ -6,7 +6,7 @@
       <div class="grid gap-8 bm:grid-cols-12 flex-shrink-0">
         <div class="col-span-3"></div>
         <div class="col-span-9">
-          <p class="text-2xl mb-7">
+          <p class="text-xl lg:text-2xl mb-7 text-gray-200">
             <span class="font-semibold">Be in the know.</span> Get access to
             amazing offers and discounts
           </p>
@@ -52,32 +52,34 @@
         <div class="col-span-9">
           <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 bm:grid-cols-4">
             <div>
-              <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
+              <h5 class="font-medium text-xl md:text-2xl mb-4 text-gray-200">
+                Links
+              </h5>
               <ul>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >Home</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For fans</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For influencers</nuxt-link
                   >
                 </li>
                 <li class="">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >FAQ's</nuxt-link
                   >
@@ -85,32 +87,34 @@
               </ul>
             </div>
             <div>
-              <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
+              <h5 class="font-medium text-xl md:text-2xl mb-4 text-gray-200">
+                Links
+              </h5>
               <ul>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >Home</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For fans</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For influencers</nuxt-link
                   >
                 </li>
                 <li class="">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >FAQ's</nuxt-link
                   >
@@ -118,32 +122,34 @@
               </ul>
             </div>
             <div>
-              <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
+              <h5 class="font-medium text-xl md:text-2xl mb-4 text-gray-200">
+                Links
+              </h5>
               <ul>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >Home</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For fans</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For influencers</nuxt-link
                   >
                 </li>
                 <li class="">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >FAQ's</nuxt-link
                   >
@@ -151,25 +157,27 @@
               </ul>
             </div>
             <div>
-              <h5 class="font-medium text-xl md:text-2xl mb-4">Links</h5>
+              <h5 class="font-medium text-xl md:text-2xl mb-4 text-gray-200">
+                Links
+              </h5>
               <ul>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >Home</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For fans</nuxt-link
                   >
                 </li>
                 <li class="mb-4">
                   <nuxt-link
-                    class="focus:outline-none transform focus:text-yellow-300 duration-75"
+                    class="focus:outline-none transform focus:text-yellow-300 duration-75 text-gray-200"
                     to="#"
                     >For influencers</nuxt-link
                   >

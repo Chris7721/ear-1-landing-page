@@ -1,4 +1,3 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   purge: [
     "./components/**/*.{vue,js}",
@@ -26,7 +25,7 @@ module.exports = {
         "gray-400": "#F3F3F3",
         "gray-500": "#363636",
         "gray-600": "#2e2e2e",
-        "gray-700": "rgba(0,0,0, .7)",
+        "gray-700": "rgba(0,0,0, .2)",
         "gray-800": "#272727",
         "gray-900": "#202020",
         "yellow-400": "#FFBB62",
@@ -37,8 +36,11 @@ module.exports = {
       },
       colors: {
         "green-500": "#007640",
-        "gray-200": "rgba(0,0,0, .7)",
+        "gray-100": "rgba(255,255,255, .9)",
+        "gray-200": "#121212",
         "gray-300": "#a6a6a6",
+        "gray-500": "rgba(255, 255,255, .6)",
+        "gray-400": "rgba(18,18,18, .6)",
         "yellow-300": "#FFBB62",
       },
       fontFamily: {

@@ -21,7 +21,7 @@
             connections.
           </h1>
         </div>
-        <p class="text-white text-center text-xl font-medium mt-9">
+        <p class="text-gray-100 text-center text-lg font-medium mt-9">
           Ear1 helps you connect directly with your favourite influencers for a
           small fee. What’s more? We assure you of getting a reply.
         </p>

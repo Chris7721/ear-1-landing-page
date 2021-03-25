@@ -10,11 +10,11 @@
           Fans
         </span>
         <h2
-          class="text-4xl sm:text-5xl bm:text-6xl font-medium text-black my-6 bm:my-8"
+          class="text-4xl sm:text-5xl bm:text-6xl font-medium text-gray-200 my-6 bm:my-8"
         >
           Connect with top influencers in your field
         </h2>
-        <p class="text-gray-200">
+        <p class="text-gray-400 text-base sm:text-lg">
           From Tech to music to business, Ear1 has a wide range of industry
           experts in diverse fields you have always wanted to connect with. Now
           is your best chance.

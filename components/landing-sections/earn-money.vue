@@ -7,12 +7,14 @@
         <div class="h-full flex items-end justify-center">
           <img
             src="/mobile-4.png"
-            class="w-9/12 sm:w-8/12 md:w-9/12 bm:w-10/12 h-full"
+            class="w-9/12 sm:w-8/12 bm:w-11/12 h-full"
             alt=""
           />
         </div>
       </div>
-      <div class="pb-2 sm:pb-4 bm:pb-16 order-first bm:order-2">
+      <div
+        class="pb-2 sm:pb-4 bm:mt-16 bm:pb-16 bm:max-w-md order-first bm:order-2"
+      >
         <div
           class="flex flex-col h-full max-w-full bm:max-w-md lg:max-w-lg justify-center md:justify-start"
         >
@@ -27,7 +29,7 @@
           >
             Earn money while you chat
           </h2>
-          <p class="text-gray-200 text-base">
+          <p class="text-gray-400 text-base sm:text-lg">
             As an influencer, you get paid by your audience to connect with
             them. That way to maximize time while earning.
           </p>
@@ -38,12 +40,7 @@
 </template>
 
 <script>
-// import Phone from "~/components/icons/phone-1";
-export default {
-  components: {
-    // Phone,
-  },
-};
+export default {};
 </script>
 
 <style lang="scss" scoped></style>

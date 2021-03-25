@@ -83,7 +83,7 @@
             >
               Filter the noise in the dm’s
             </h2>
-            <p class="text-gray-300">
+            <p class="text-gray-500 text-base sm:text-lg">
               Ear1 helps you get rid of all the noise in your dm’s across other
               social media apps. This way, you are sure to connect with serious
               people and make genuine business and personal connections.
@@ -110,7 +110,7 @@ export default {
   },
   created() {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.defaults({ duration: 0.3 });
+    gsap.defaults({ duration: 0.4 });
   },
   mounted() {
     const tl = gsap.timeline();

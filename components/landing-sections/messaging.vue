@@ -34,7 +34,7 @@
           >
             Be assured of replies
           </h2>
-          <p class="text-white">
+          <p class="text-gray-100 text-base sm:text-lg">
             With ear1, we assure you of getting a response to your messages.
             Don’t be part of the noise in the dms. Get ahead of the game by
             paying a small fee.
