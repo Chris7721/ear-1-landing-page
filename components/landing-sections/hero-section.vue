@@ -6,17 +6,17 @@
       >
         <div class="mt-20">
           <h1
-            class="text-white font-bold text-5xl sm:text-6xl md:text-8xl text-center"
+            class="text-white font-bold text-5xl sm:text-6xl md:text-8xl lg:text-8.5xl text-center"
           >
             Build direct,
           </h1>
           <h1
-            class="text-white font-bold text-5xl sm:text-6xl md:text-8xl text-center"
+            class="text-white font-bold text-5xl sm:text-6xl md:text-8xl lg:text-8.5xl text-center"
           >
             meaningful
           </h1>
           <h1
-            class="text-white font-bold text-5xl sm:text-6xl md:text-8xl text-center"
+            class="text-white font-bold text-5xl sm:text-6xl md:text-8xl lg:text-8.5xl text-center"
           >
             connections.
           </h1>
@@ -39,24 +39,24 @@
             </button>
           </div>
         </div>
-        <div class="relative z-20 mt-14" ref="mobile-holder">
+        <div class="relative -mb-68 z-20 mt-14" ref="mobile-holder">
           <div
-            class="absolute z-10 bottom-0 -left-2/4 hidden md:block w-96 h-56"
+            class="absolute z-10 top-36 -left-36 hidden md:block w-64"
             ref="mobile-1"
           >
-            <img src="/mobile-2.png" class="h-full" alt="" />
+            <img src="/phone-1.png" class="h-full w-full" alt="" />
           </div>
-          <div class="relative z-20 w-full hidden md:block md:w-96">
-            <img src="/mobile-1.png" alt="" class="object-cover" />
+          <div class="relative z-20 w-full hidden md:block md:w-72">
+            <img src="/phone-2.png" alt="" class="object-cover" />
           </div>
-          <div class="relative z-20 w-full md:hidden">
-            <img src="/mobile-6.png" alt="" class="object-cover" />
+          <div class="relative z-20 w-72 md:hidden">
+            <img src="/phone-2.png" alt="" class="object-cover" />
           </div>
           <div
-            class="absolute z-10 bottom-0 -right-2/4 hidden md:block w-96 h-56"
+            class="absolute z-10 top-36 -right-36 hidden md:block w-64"
             ref="mobile-3"
           >
-            <img src="/mobile-3.png" class="h-full" alt="" />
+            <img src="/phone-3.png" class="h-full w-full" alt="" />
           </div>
         </div>
       </div>
@@ -87,19 +87,27 @@ export default {
     const tl = gsap.timeline();
     const tl3 = gsap.timeline();
     tl.from(this.$refs["mobile-1"], {
-      rotate: "20deg",
-      opacity: 0.7,
-      x: 190,
+      opacity: 0.9,
+      rotate: 0,
+      // x: 190,
+    }).to(this.$refs["mobile-1"], {
+      rotate: "-21deg",
     });
-    tl3.from(this.$refs["mobile-3"], {
-      rotate: "-20deg",
-      opacity: 0.7,
-      x: -190,
-    });
+    tl3
+      .from(this.$refs["mobile-3"], {
+        opacity: 0.9,
+        rotate: 0,
+        // transformOrigin: " right ",
+        // x: -190,
+      })
+      .to(this.$refs["mobile-3"], {
+        rotate: "21deg",
+        opacity: 1,
+      });
     ScrollTrigger.create({
       animation: tl3,
       trigger: this.$refs["mobile-holder"],
-      start: "top 90%",
+      start: "top 80%",
       end: "top 10%",
       scrub: true,
       // markers: true,
@@ -107,10 +115,10 @@ export default {
     ScrollTrigger.create({
       animation: tl,
       trigger: this.$refs["mobile-holder"],
-      start: "top 90%",
+      start: "top 80%",
       end: "top 10%",
       scrub: true,
-      // markers: true,
+      markers: true,
     });
   },
 };

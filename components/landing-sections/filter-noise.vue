@@ -20,7 +20,7 @@
         class="bg-gray-800 pl-6 xs:pl-9 sm:pl-12 bm:pl-24 justify-center hidden bm:flex"
       >
         <div
-          class="w-9/12 sm:w-8/12 md:w-9/12 bm:w-11/12 h-5/6 relative border-b-12 border-l-12 border-r-12 border-gray-400 rounded-bl-3xl rounded-br-3xl"
+          class="w-9/12 sm:w-8/12 md:w-9/12 h-5/6 relative border-b-12 border-l-12 border-r-12 border-gray-400 rounded-bl-3xl rounded-br-3xl"
         >
           <div
             class="absolute bottom-0 left-0 min-w-full h-4/6"

@@ -15,6 +15,17 @@ module.exports = {
         "p-lg": "3rem",
         lg: "5rem",
       },
+      margin: {
+        "-68": "-17rem",
+      },
+      fontSize: {
+        "8.5xl": [
+          "8rem",
+          {
+            letterSpacing: "-0.01em",
+          },
+        ],
+      },
       backgroundColor: {
         "green-400": "#029F58",
         "green-500": "#039352",
@@ -54,7 +65,7 @@ module.exports = {
       "yellow-500": "#FF8C62",
       "gray-500": "#363636",
       "gray-400": "#2e2e2e",
-      "gray-300": "rgba(18, 18, 18, 0.3)",
+      "gray-300": "rgba(0, 0, 0, 0.2)",
     }),
     screens: {
       xs: "450px",

@@ -55,14 +55,14 @@ export default {
   },
   mounted() {
     setInterval(async () => {
-      await this.fakeAsync();
+      await this.throwImage();
       const removedPerson = this.persons.splice(0, 1);
       this.persons = [...this.persons, ...removedPerson];
-      await this.revert();
+      await this.revertImageState();
     }, 2200);
   },
   methods: {
-    fakeAsync() {
+    throwImage() {
       return new Promise((resolve) => {
         gsap.timeline().to(this.$refs["img-0"], {
           rotate: "8deg",
@@ -75,7 +75,7 @@ export default {
         }, 1000);
       });
     },
-    revert() {
+    revertImageState() {
       return new Promise((resolve) => {
         gsap.timeline().to(this.$refs["img-0"], {
           rotate: "0",
