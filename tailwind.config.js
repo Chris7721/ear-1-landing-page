@@ -20,7 +20,7 @@ module.exports = {
       },
       fontSize: {
         "8.5xl": [
-          "8rem",
+          "6.8rem",
           {
             letterSpacing: "-0.01em",
           },
